@@ -8,8 +8,9 @@ a{
     color: #333;
 }
 html, body {
-   
-    color: #333;
+   color: #333;
+   min-width: 1280px; /* 컨테이너 중심축보다 작은디바이스에서
+                          중심축깨지지않게 나옴  */
 }
 /* header */
 header {
