@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김누리 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    //스크립트 주석  자바스크립트, 제이쿼리 
+    $(function(){
+        //스크립트코드작성
+        //모션그래픽 탭메뉴 
+        //메뉴를 클릭하면 클래스명 on이 붙고 떨어지도록 작성
+        $('.youtube_menu li').click(function(){
+            $('.youtube_menu li').removeClass('on');
+            $(this).addClass('on');
+            $('.menu_cont').removeClass('on');
+            $('.menu_cont').eq($(this).index()).addClass('on');
+        });
+        //a태그 기능 방지
+        $('.youtube_menu li a').click(function(e){
+            e.preventDefault();
+        });
+
+    }); //jpuery end
+</script>
+
+</head>
+<body>
+    <header>
+        <div>
+        <h1>
+            <a href="#">KIMNURI</a> 
+        </h1>
+        <p><a href="#"download>resume</a></p>    
+    </header>
+</div>
+    <!-- 메인비주얼 -->
+    <section class="main_visual">
+     <div>
+         <h2>multi designer</h2>
+         <p>KIM NU RI</p>
+     </div>
+    </section><!-- .main_visual end -->
+   
+    <!-- 베스트 포트폴리오 -->
+    <section class="best">
+      <h3>베스트 포트폴리오</h3>
+      <div class="best_box">
+        <div class="info">
+        <p class="cate">#홍보영상</p>
+        <h4>여행, 오늘과 과거를 잇다.</h4>
+        <p class="produce">연출, 촬영, 편집 , 디자인 , 특수효과</p>
+        <p class="text">제작목적, 콘셉트 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia officia fugit eveniet possimus, iure est dicta at, provident laborum nesciunt facere neque odio accusamus repellendus placeat, obcaecati atque! Voluptatibus, beatae</p>
+        <dl>
+            <dt>프로그램</dt>
+            <dd>pohtoshop, premiere pro, after effects</dd>
+        </dl>
+        <dl>
+            <dt>배경음악</dt>
+            <dd>사월-새로운 마음</dd>
+        </dl>
+        <dl>
+            <dt>러닝타임</dt>
+            <dd>2m50s</dd>
+        </dl>
+        <ul>
+            <li><a href="#">영상보기</a></li>
+            <li><a href="#">기획서보기</a></li>
+        </ul>
+        </div><!-- .info end -->
+        <div class="youtube_list">
+           <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SfMZH9K_jJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+        </div><!-- .youtube_list end -->
+      </div><!-- .best_box end -->
+      <div class="bg">
+        <div class="best_box">
+            <div class="web_design">
+                <figure>
+                    <img src="images/main_img09.jpg" alt="" />
+                </figure>
+        </div><!-- .web_design end -->
+            <div class="info">
+            <p class="cate">#야경/관광</p>
+            <h4>부산, 오늘과 과거를 잇다.</h4>
+            <p class="produce">디자인, 퍼블리싱 </p>
+            <p class="text">제작목적, 콘셉트 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consectetur accusantium ab commodi aspernatur atque esse sint harum, sequi perspiciatis quisquam ratione quos eum iste, error dolorem enim sunt corrupti?</p>
+                <dl>
+                        <dt> 프로그램 및 언어</dt>
+                        <dd> pohtoshop,vs code, html, css</dd>
+                    </dl>
+                    <ul>
+                        <li><a href="#">웹페이지보기</a></li>
+                        <li><a href="#">기획서보기</a></li>
+                    </ul>
+                    </div><!-- .info end -->
+    
+        </div><!-- .best_box end -->
+    </div><!-- .bg end -->
+      </section><!-- .best end -->
+      
+      <!-- 카테고리별 유튜브 적용 -->
+    <section class="youtube_wrap">
+        <h3>모션 그래픽</h3>
+        <ul class="youtube_menu">
+            <li class="on"><a href="#">게임</a></li>
+            <li><a href="#">홍보영상</a></li>
+            <li><a href="#">인포그래픽</a></li>
+            <li><a href="#">뮤비티저</a></li>
+            <li><a href="#">영화티저</a></li>
+        </ul><!-- .youtube_menu end -->
+        <div class="youtube_cont">
+            <div class="menu_cont on">
+            <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/h3fUgOKFMNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 1 -->
+
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wJ0aiDNOcUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 2 -->
+
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LRVHafRm498" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 3 -->
+
+            </div><!-- .menu_cont 1 게임-->
+
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/h3fUgOKFMNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 1 -->
+
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wJ0aiDNOcUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 2 -->
+
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F3_WFmriDJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 3 -->
+
+            </div><!-- .menu_cont 2 홍보영상-->
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/h3fUgOKFMNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 1 -->
+
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wJ0aiDNOcUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 2 -->
+
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LRVHafRm498" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 3 -->
+
+            </div><!-- .menu_cont 3 인포그래픽-->
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/h3fUgOKFMNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 1 -->
+
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wJ0aiDNOcUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 2 -->
+
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LRVHafRm498" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 3 -->
+
+            </div><!-- .menu_cont 4 뮤비티저-->
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/h3fUgOKFMNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 1 -->
+
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wJ0aiDNOcUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 2 -->
+
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LRVHafRm498" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출 , 촬영 , 편집 , 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>music-new</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+
+                </div><!-- .box 3 -->
+
+            </div><!-- .menu_cont 5 영화티저-->
+        </div><!-- .youtube_cont end -->
+        </section><!-- .youtube_warp end -->
+
+        <section class="g_design">
+            <h3>2D 디자인</h3>
+            <em>클릭하시면 큰 이미지를 보실 수 있습니다.</em>
+            <div class="img_list">
+                <div>
+                    <a href="images/main_img15.PNG" data-fancybox="images">
+                        <figure>
+                            <img src="images/main_img15.PNG" alt="" />
+                        </figure>
+                        <ul>
+                            <li>캐릭터디자인</li>
+                            <li>목적, 제목, 프로그램</li>
+                        </ul>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/main_13.jpg" data-fancybox="images">
+                        <figure>
+                            <img src="images/main_13.jpg" alt="" />
+                        </figure>
+                        <ul>
+                            <li>캐릭터디자인</li>
+                            <li>목적, 제목, 프로그램</li>
+                        </ul>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/main_img16.jpg" data-fancybox="images">
+                        <figure>
+                            <img src="images/main_img16.jpg" alt="" />
+                        </figure>
+                        <ul>
+                            <li>캐릭터디자인</li>
+                            <li>목적, 제목, 프로그램</li>
+                        </ul>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/main_12.jpg" data-fancybox="images">
+                        <figure>
+                            <img src="images/main_12.jpg" alt="" />
+                        </figure>
+                        <ul>
+                            <li>캐릭터디자인</li>
+                            <li>목적, 제목, 프로그램</li>
+                        </ul>
+                    </a>
+                </div>
+            </div><!-- .img_list end -->
+         </section><!-- .g_design end -->
+
+         <footer>
+             <h3>KIMNURI</h3>
+             <ul>
+                 <li><a href="#">유튜브채널 바로가기</a></li>
+                 <li><a href="tel:010-5833-7889">010.5833.7889</a></li>
+                 <li>nrgim72@gmail.com</li><!-- 카카오아이디도많이 이용 -->
+             </ul>
+             <p>COPYRIGHT 2022. KimNuRi ALL RIGHTS RESERVED.<br />본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
+         </footer>
+</body>
+</html>
