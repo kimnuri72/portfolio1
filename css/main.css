@@ -68,7 +68,7 @@ header div h1 a{
     width: 1280px;
     margin: 0 auto;
     font-family: 'Comfortaa', cursive;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 
@@ -82,6 +82,7 @@ header div h1 a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+    align-items: center;
 }
 
 .best .best_box .info {
@@ -151,6 +152,8 @@ header div h1 a{
 /* 카테고리별 유튜브 적용 */
 .youtube_wrap{
     margin: 150px 0;
+    background-color: #fff;
+    background ;
 }
 .youtube_wrap .youtube_menu {
     display: flex;
@@ -232,13 +235,15 @@ h3{
 
 /* 2D 디자인 */
 .g_design{
-    background-color: #eee;
+    background-color: #fff;
   /*   background: rgb(250,249,251);
     background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(211,210,213,1) 50%, rgba(250,246,240,1) 100%); */
     padding: 150px 0;
+    padding-bottom: 0;
 }
 .g_design h3 {
     font-family: 'Sansita Swashed', cursive;
+   color: deeppink;
 }
 .g_design em {
     width: 1280px;
@@ -286,13 +291,15 @@ h3{
    }
 /* 푸터 footer */
 footer{
-    background-color: rgb(131, 126, 126);
+    background: rgb(222,220,91);
+    background: linear-gradient(90deg, rgba(222,220,91,1) 0%, rgba(231,174,238,1) 50%, rgba(120,245,233,1) 100%);
     color: #fff;
     padding: 100px 0;
     text-align: center;
 }
 footer h3{
-    font-family: 'Kirang Haerang', cursive;
+    font-family: 'Black Han Sans', sans-serif;
+    color: #fff;
 }
 footer a{
     color: #fff;
