@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+html, body {
+    color: #333;
+}
+
+/* 공통된 요소 */
+h3 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* 웹&앱 디자인 .web_design */
+.web_wrap { 
+    /* background-color: #ccc; */
+    /* color: #fff; */
+    margin: 150px 0;
+}
+.web_wrap .web_box {
+    width: 1280px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.web_wrap .web_box .web {
+    width: 32%;
+    margin-bottom: 50px;
+}
+.web_wrap .web_box .web figure { 
+    height: 350px;
+
+}
+.web_wrap .web figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.web_wrap .web_box .info {  
+    padding-top: 20px;
+} 
+
+/* .info 공통스타일 */
+.info .text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.info ul {display: flex; margin-top: 30px;}
+.info ul li:first-of-type {
+    /* background-color: #333; */
+    background: rgb(254,131,53);
+    background: linear-gradient(90deg, rgba(254,131,53,1) 0%, rgba(241,31,16,1) 100%);
+    border: 1px solid rgb(254,131,53);
+}
+
+.info ul li {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #333;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.info ul li a {
+    padding: 0 20px;
+}
+.info ul li:first-of-type a {
+    color: #fff;
+}
+
+
+
+/* 개인정보 .about */
+.about {
+    margin: 150px 0;
+}
+.about .about_box {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about .about_box figure {
+    width: 30%;
+    height: 500px;
+}
+.about .about_box figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .about_box .about_info {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .about_box .about_info > div {
+    width: 45%;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+.about h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about p {
+    /* margin-bottom: 5px; */
+    font-size: 20px;
+}
+.about dl {
+    font-size: 20px;
+}
+.about dl dt {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
